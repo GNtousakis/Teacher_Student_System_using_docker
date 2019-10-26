@@ -25,6 +25,7 @@
   <br><br>
 	<h1 align="center">Welcome teacher!!!</h1><br>
   <h2 align="center">This is the student management system</h2><br>
-  <h3 align="center">You can Add,Edit,Search and Delete Students</h3>
+  <h3 align="center">You can Add,Edit,Search and Delete Students</h3><br><br>
+  <img src="tuc.png" alt="Tuc" class="center">
 </body>
 </html>

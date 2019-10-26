@@ -8,8 +8,18 @@
 <meta charset="utf-8">
 <title>Teacher Register Page</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style_2.css" />
 </head>
 <body>
+
+<ul>
+        <li><a class="active" href="index.php">Home</a></li>
+      <div class="right">
+        <li><a href="index.php">Login</a></li>
+        <li><a href="">Register</a></li>
+      </div>
+</ul>
+
 <div class="container">
     <section id="content">
         <form action="reg_done.php" method="get">

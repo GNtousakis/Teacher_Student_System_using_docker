@@ -17,7 +17,7 @@
         if($rows==1){
             $rows= mysqli_query($conn,$sql)->fetch_assoc();
             echo "The data of the student is " . $rows["name"] . " " . $rows["surname"] . " " 
-                . $rows["fathername"];
+                . $rows["fathername"];  
         }
         else{
             echo "<script language=\"javascript\">

@@ -25,7 +25,9 @@
             header("Location: teacher.php");
         }
         else{
-            echo "wrong ";
+            echo "<script language=\"javascript\">
+                      alert(\"Wrong name or password... try again!\");
+                  </script>";
         }
     }
 ?>
@@ -36,8 +38,19 @@
 <meta charset="utf-8">
 <title>Login Page</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style_2.css" />
+
 </head>
 <body>
+
+<ul>
+        <li><a class="active" href="index.php">Home</a></li>
+      <div class="right">
+        <li><a href="">Login</a></li>
+        <li><a href="register.php">Register</a></li>
+      </div>
+</ul>
+
 <div class="container">
     <section id="content">
         <form action="" method="post" name="login">
