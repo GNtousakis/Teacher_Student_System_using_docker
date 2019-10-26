@@ -16,8 +16,11 @@
       if($result != FALSE)    $rows = mysqli_num_rows($result);
         if($rows==1){
             $rows= mysqli_query($conn,$sql)->fetch_assoc();
-            echo "The data of the student is " . $rows["name"] . " " . $rows["surname"] . " " 
-                . $rows["fathername"];  
+            $fathername= $rows["fathername"];
+            $grade= $rows["grade"];
+            $mobile= $rows["mobile"];
+            $born= $rows["date"];
+            echo "The data of the student is name: " . $rows["name"] . " and surname: " . $rows["surname"] . " fathername: " . $rows["fathername"] . " grade: " . $grade;  
         }
         else{
             echo "<script language=\"javascript\">
