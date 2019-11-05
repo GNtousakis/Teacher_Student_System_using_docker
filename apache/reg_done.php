@@ -1,9 +1,9 @@
 <?php include_once 'includes/dbconnect.php';
-	$name= $_GET["name"];
-	$surname= $_GET["surname"];
-	$username= $_GET["username"];
-	$password= $_GET["password"];
-	$email= $_GET["email"];
+	$name= $_POST["name"];
+	$surname= $_POST["surname"];
+	$username= $_POST["username"];
+	$password= $_POST["password"];
+	$email= $_POST["email"];
 
 
 	$sql= "INSERT INTO Teachers (name,surname,username,password,email)

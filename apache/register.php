@@ -22,7 +22,7 @@
 
 <div class="container">
     <section id="content">
-        <form action="reg_done.php" method="get">
+        <form action="reg_done.php" method="post">
             <h1 id="demo">Register Form</h1>
             <div>
                 <input type="text" placeholder="Name" required="" name="name" />
