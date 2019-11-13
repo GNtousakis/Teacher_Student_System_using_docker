@@ -2,9 +2,6 @@
     include_once 'includes/dbconnect.php';
     include("auth.php");
 
-    include_once 'includes/dbconnect.php';
-    include("auth.php");
-
     if (isset($_REQUEST['name'])){
       $name = stripslashes($_REQUEST['name']);
       $name = mysqli_real_escape_string($conn,$name); 
@@ -16,11 +13,14 @@
       if($result != FALSE)    $rows = mysqli_num_rows($result);
         if($rows==1){
             $rows= mysqli_query($conn,$sql)->fetch_assoc();
-            $fathername= $rows["fathername"];
-            $grade= $rows["grade"];
-            $mobile= $rows["mobile"];
-            $born= $rows["date"];
-            echo "The data of the student is name: " . $rows["name"] . " and surname: " . $rows["surname"] . " fathername: " . $rows["fathername"] . " grade: " . $grade;  
+            $_SESSION['stname']= $rows["name"];
+            $_SESSION['stsurname']= $rows["surname"];
+            $_SESSION['fathername']= $rows["fathername"];
+            $_SESSION['grade']= $rows["grade"];
+            $_SESSION['mobile']= $rows["mobilenumber"];
+            $_SESSION['date']= $rows["birthday"];
+            header("Location: studentresult.php");     
+  
         }
         else{
             echo "<script language=\"javascript\">

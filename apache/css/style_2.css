@@ -21,6 +21,10 @@ h1{
     color:#563D64;
 }
 
+h2{ 
+    font-size:26px;
+    color: #808080;
+}
 
 li {
   float: left;
